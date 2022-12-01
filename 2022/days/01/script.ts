@@ -1,6 +1,6 @@
 import { getData, splitArray, arrayGet } from "../../utils";
 
-const calorieList = getData("input1.txt")
+const calorieList = getData("input.txt")
 	.split("\r\n")
 	.map((item) => (item === "" ? -1 : +item));
 const calorieByElf = splitArray(calorieList, -1);
