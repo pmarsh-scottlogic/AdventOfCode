@@ -1,3 +1,4 @@
+import { group } from "console";
 import fs from "fs";
 
 export function getData(filepath: string) {
@@ -27,4 +28,17 @@ export function arrayGet<T>(arr: Array<T>, index: number): T {
 		index -= arr.length;
 	}
 	return arr[index];
+}
+
+export function arrayGroup<T>(arr: Array<T>, groupSize: number) {
+	const grouped = [];
+	let current: Array<T> = [];
+	for (let i = 0; i < arr.length; i++) {
+		current.push(arr[i]);
+		if (i % 3 === 2) {
+			grouped.push(current);
+			current = [];
+		}
+	}
+	return grouped;
 }
