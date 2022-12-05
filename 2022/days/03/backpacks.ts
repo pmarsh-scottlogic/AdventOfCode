@@ -1,4 +1,4 @@
-import { getData, arrayGroup } from "../../utils";
+import { getData, arrayGroup } from "../../utils/utils";
 
 const rucksacks = getData("input.txt").split("\r\n");
 

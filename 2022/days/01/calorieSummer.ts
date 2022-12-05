@@ -1,4 +1,4 @@
-import { getData, splitArray, arrayGet } from "../../utils";
+import { getData, splitArray, arrayGet } from "../../utils/utils";
 
 const calorieList = getData("input.txt")
 	.split("\r\n")

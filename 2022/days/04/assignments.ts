@@ -1,4 +1,4 @@
-import { getData } from "../../utils";
+import { getData } from "../../utils/utils";
 
 const assignmentPairs = getData("input.txt")
 	.split("\r\n")
