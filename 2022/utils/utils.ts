@@ -42,3 +42,14 @@ export function arrayGroup<T>(arr: Array<T>, groupSize: number) {
 	}
 	return grouped;
 }
+
+export function distinct(data: string | Array<any>) {
+	for (let i = 0; i < data.length - 1; i++) {
+		for (let j = i + 1; j < data.length; j++) {
+			if (data[i] === data[j]) {
+				return false;
+			}
+		}
+	}
+	return true;
+}
